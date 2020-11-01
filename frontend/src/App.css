@@ -1,3 +1,23 @@
+/*box sizing*/
+* {
+    box-sizing: border-box;
+}
+
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+p {
+    text-align: center;
+}
+
 .App {
     /*text-align: center;*/
     font-family: Quicksand, sans-serif;
@@ -5,7 +25,7 @@
     overflow: hidden;
     display: block;
     position: relative;
-    /*padding-bottom: 10px; /* height of your footer */
+    padding-bottom: 10px; /* height of your footer */
 }
 
 
@@ -19,21 +39,21 @@ footer {
     text-align: center;
     background-color: #333;
     color: #888;
-    padding: 0px 3px 10px;
+    padding: 20px 3px 5px;
 }
 
 /*trying to center author credits*/
-.row {
+.row, .author {
     /*display: grid;*/
     margin: 0 auto;
 }
 
 /*display items in columns*/
-/*.col {
+.col {
     display: block;
     float: left;
     margin: 1% 0 1% 1.6%;
-}*/
+}
 
 /*get rid of list styles for social links*/
 .social-links {
@@ -58,6 +78,7 @@ footer {
 
 .credits {
     font-size: 10px;
+    margin: 0 auto;
 }
 
 /*get rid of title attribute in ion-icon so it won't show tool tip by mouse*/
