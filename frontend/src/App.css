@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+    /*text-align: center;*/
+    font-family: Quicksand, sans-serif;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /*padding-bottom: 10px; /* height of your footer */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*-----------------------------------------------------
+    FOOTER STYLE
+-------------------------------------------------------*/
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #333;
+    color: #888;
+    padding: 0px 3px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*trying to center author credits*/
+.row {
+    /*display: grid;*/
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*display items in columns*/
+/*.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}*/
+
+/*get rid of list styles for social links*/
+.social-links {
+    list-style: none;
+    font-size: 35px;
 }
 
-.App-link {
-  color: #61dafb;
+/*display links list as an inline block and make sure they're side by side*/
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-links li a, .credits a {
+    color: #888;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links li a:hover, .credits a:hover {
+    color: #545454;
+}
+
+.credits {
+    font-size: 10px;
+}
+
+/*get rid of title attribute in ion-icon so it won't show tool tip by mouse*/
+ion-icon {
+    pointer-events: none;
 }

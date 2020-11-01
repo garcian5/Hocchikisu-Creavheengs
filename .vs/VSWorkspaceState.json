@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\frontend",
+    "\\frontend\\public",
+    "\\frontend\\public\\favicon",
+    "\\frontend\\src"
   ],
+  "SelectedNode": "\\frontend\\public\\robots.txt",
   "PreviewInSolutionExplorer": false
 }
