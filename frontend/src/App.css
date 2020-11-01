@@ -28,6 +28,8 @@ p {
     padding-bottom: 10px; /* height of your footer */
 }
 
+.center { text-align: center; }
+
 
 /*-----------------------------------------------------
     FOOTER STYLE
@@ -84,4 +86,20 @@ footer {
 /*get rid of title attribute in ion-icon so it won't show tool tip by mouse*/
 ion-icon {
     pointer-events: none;
+}
+
+
+/*-----------------------------------------------------
+    NAVBAR STYLE
+-------------------------------------------------------*/
+
+.navbar.navbar-inverse .navbar-header .navbar-brand {
+    display: block;
+    text-align: center;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar.navbar-inverse .navbar-header {
+    float: none;
 }
