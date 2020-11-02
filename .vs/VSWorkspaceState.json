@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\frontend",
-    "\\frontend\\public",
-    "\\frontend\\public\\favicon",
-    "\\frontend\\src"
+    "\\frontend\\src",
+    "\\frontend\\src\\components",
+    "\\frontend\\src\\components\\presentational"
   ],
-  "SelectedNode": "\\frontend\\public\\robots.txt",
+  "SelectedNode": "\\frontend\\src\\components\\presentational\\NavBar.js",
   "PreviewInSolutionExplorer": false
 }
