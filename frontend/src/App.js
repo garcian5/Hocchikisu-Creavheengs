@@ -11,10 +11,13 @@ import Footer from './components/presentational/Footer';
 import NavBar from './components/presentational/NavBar';
 import About from './components/presentational/About';
 import Home from './components/presentational/Home';
+
 import PlasticArt from './components/presentational/artcategory/PlasticArt';
 import LiteraryArt from './components/presentational/artcategory/LiteraryArt';
 import VisualArt from './components/presentational/artcategory/VisualArt';
 import OtherArt from './components/presentational/artcategory/OtherArt';
+
+import LoginCreate from './components/presentational/user/LoginCreate';
 
 
 function App() {
@@ -26,10 +29,13 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
+
                     <Route path="/literary-art" component={LiteraryArt} />
                     <Route path="/visual-art" component={VisualArt} />
                     <Route path="/plastic-art" component={PlasticArt} />
                     <Route path="/other-art" component={OtherArt} />
+
+                    <Route path="/login-or-create" component={LoginCreate} />
                 </Switch>
             </Router>
 

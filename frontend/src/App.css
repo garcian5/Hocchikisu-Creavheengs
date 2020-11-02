@@ -34,11 +34,21 @@ p {
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 200px; /* height of your footer */
+    padding-bottom: 150px; /* height of your footer */
 }
 
+/*centering*/
 .center { text-align: center; }
 
+
+/*general button style*/
+button, input[type="button"], input[type="submit"] {
+    background: none;
+    border: none;
+}
+.search-icon:focus, .user-icon:focus, .logcrea-btn:focus {
+    outline: none;
+}
 
 /*-----------------------------------------------------
     FOOTER STYLE
@@ -106,14 +116,6 @@ ion-icon {
 }
 
 /*----Search----*/
-.search-icon, .user-icon {
-    background: none;
-    border: none;
-}
-.search-icon:focus, .user-icon:focus {
-    outline: none;
-}
-
 .search-icon {
     margin-right: 30px;
 }
@@ -125,11 +127,6 @@ ion-icon {
     border-radius: 5%;
     width: 250px;
     font-size: 15px;
-}
-
-/*----Dropdown----*/
-.dropdown-btn {
-    font-size: 300px;
 }
 
 /*-----------------------------------------------------
@@ -155,3 +152,49 @@ ion-icon {
     box-shadow: 2px 3px 3px rgba(0,0,0,0.15);
     padding: 30px;
 }
+
+/*-----------------------------------------------------
+    LOGIN CREATE STYLE
+-------------------------------------------------------*/
+.login-create {
+    background-color: #a49f9d;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+/*Create a box model for this div and center it*/
+/*https://stackoverflow.com/questions/2498003/center-a-div-box-in-the-middle-of-the-page-using-css*/
+/*https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/*/
+.logcrea-box {
+    background-color: whitesmoke;
+    padding: 100px 0px 100px;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logcrea-greeting {
+    padding-bottom: 80px;
+}
+
+.logcrea-btn {
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid;
+    transition: transform .1s;
+}
+
+.logcrea-btn:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+}
+
+.or { padding: 15px 0px 5px; }
+.light-blue { background-color: #BEE0FD; }
+.light-grey { background-color: #C6C6C6; }
