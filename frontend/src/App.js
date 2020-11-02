@@ -11,10 +11,10 @@ import Footer from './components/presentational/Footer';
 import NavBar from './components/presentational/NavBar';
 import Home from './components/presentational/Home';
 import Test from './components/presentational/Test';
-import Story from './components/presentational/artcategory/Story';
-import Comics from './components/presentational/artcategory/Comics';
-import Art from './components/presentational/artcategory/Art';
-import Poem from './components/presentational/artcategory/Poem';
+import PlasticArt from './components/presentational/artcategory/PlasticArt';
+import LiteraryArt from './components/presentational/artcategory/LiteraryArt';
+import VisualArt from './components/presentational/artcategory/VisualArt';
+import OtherArt from './components/presentational/artcategory/OtherArt';
 
 
 function App() {
@@ -26,10 +26,10 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/test" component={Test} />
-                    <Route path="/story" component={Story} />
-                    <Route path="/comics" component={Comics} />
-                    <Route path="/art" component={Art} />
-                    <Route path="/poem" component={Poem} />
+                    <Route path="/literary-art" component={LiteraryArt} />
+                    <Route path="/visual-art" component={VisualArt} />
+                    <Route path="/plastic-art" component={PlasticArt} />
+                    <Route path="/other-art" component={OtherArt} />
                 </Switch>
             </Router>
 

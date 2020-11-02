@@ -7,20 +7,20 @@ function Home() {
 			<div className="container dashboard">
 				<h1>This is the Main Content.</h1>
 				<Dashboard
-					category="story"
-					path="/story"
+					category="Literary Arts"
+					path="/literary-art"
 				/>
 				<Dashboard
-					category="comics"
-					path="/comics"
+					category="Visual/Illustration Arts"
+					path="/visual-art"
 				/>
 				<Dashboard
-					category="art"
-					path="/art"
+					category="Plastic Arts"
+					path="/plastic-art"
 				/>
 				<Dashboard
-					category="poem"
-					path="/poem"
+					category="Other Arts"
+					path="/other-art"
 				/>
 			</div>
 		</main>
@@ -28,3 +28,5 @@ function Home() {
 }
 
 export default Home;
+
+// https://www.britannica.com/topic/the-arts
