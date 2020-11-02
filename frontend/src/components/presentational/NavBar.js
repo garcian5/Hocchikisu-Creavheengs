@@ -1,10 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { Dropdown } from 'react-bootstrap';
+
 function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="center">
-                <ion-icon name="menu-outline"></ion-icon>
+                <Dropdown size="sm">
+                    <Dropdown.Toggle variant>Explore</Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item as={Link} to="/">Home</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/test">Test</Dropdown.Item>                        
+                    </Dropdown.Menu>
+                </Dropdown>
             </div>
 
             <NavLink className="navbar-brand" exact to="/">HocchiCreav</NavLink>

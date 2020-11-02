@@ -103,3 +103,15 @@ ion-icon {
 .navbar.navbar-inverse .navbar-header {
     float: none;
 }
+
+/*----Dropdown----*/
+.dropdown-btn {
+    font-size: 300px;
+}
+.dropdown-btn:focus {
+    outline: none;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
