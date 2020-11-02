@@ -13,14 +13,20 @@ function NavBar() {
                         <Dropdown.Item as={Link} to="/test">Test</Dropdown.Item>                        
                     </Dropdown.Menu>
                 </Dropdown>
-            </div>
+            </div>            
 
-            <NavLink className="navbar-brand" exact to="/">HocchiCreav</NavLink>
+            <form>
+                <NavLink className="navbar-brand nav-name" exact to="/">HocchiCreav</NavLink>
+                <input type="text" />
 
-            <div className="center">
-                <ion-icon name="search-outline"></ion-icon>
-                <ion-icon name="person-outline"></ion-icon>
-            </div>
+                <button className="search-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+
+                <button className="user-icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </button>
+            </form>
         </nav>
     )
 }
