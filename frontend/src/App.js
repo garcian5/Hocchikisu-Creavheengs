@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components
 import Footer from './components/presentational/Footer';
 import NavBar from './components/presentational/NavBar';
+import About from './components/presentational/About';
 import Home from './components/presentational/Home';
-import Test from './components/presentational/Test';
 import PlasticArt from './components/presentational/artcategory/PlasticArt';
 import LiteraryArt from './components/presentational/artcategory/LiteraryArt';
 import VisualArt from './components/presentational/artcategory/VisualArt';
@@ -25,7 +25,7 @@ function App() {
 
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route path="/test" component={Test} />
+                    <Route path="/about" component={About} />
                     <Route path="/literary-art" component={LiteraryArt} />
                     <Route path="/visual-art" component={VisualArt} />
                     <Route path="/plastic-art" component={PlasticArt} />

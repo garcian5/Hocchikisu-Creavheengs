@@ -10,7 +10,7 @@ function NavBar() {
                     <Dropdown.Toggle variant>Explore</Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item as={Link} to="/">Home</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/test">Test</Dropdown.Item>                        
+                        <Dropdown.Item as={Link} to="/about">About</Dropdown.Item>                        
                     </Dropdown.Menu>
                 </Dropdown>
             </div>            

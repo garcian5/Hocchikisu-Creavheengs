@@ -5,7 +5,7 @@ function Home() {
 	return (
 		<main>
 			<div className="container dashboard">
-				<h1>This is the Main Content.</h1>
+				<h1>Welcome!</h1>
 				<Dashboard
 					category="Literary Arts"
 					path="/literary-art"
