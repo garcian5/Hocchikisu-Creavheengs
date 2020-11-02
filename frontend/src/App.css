@@ -3,10 +3,14 @@
     box-sizing: border-box;
 }
 
-    *:before,
-    *:after {
-        box-sizing: border-box;
-    }
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+*:focus, button:focus, button {
+    outline: none;
+}
 
 html,
 body {
@@ -16,6 +20,11 @@ body {
 
 p {
     text-align: center;
+}
+
+.link, .link:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .App {
@@ -89,41 +98,39 @@ ion-icon {
 }
 
 /*-----------------------------------------------------
-    SEARCH & USER STYLE
--------------------------------------------------------*/
-.search-icon, .user-icon {
-    background: none;
-    border: none;
-    margin-right: 30px;
-}
-.search-icon:focus {
-    outline:none;
-}
-
-.user-icon {
-    margin-right: 0;
-}
-
-/*-----------------------------------------------------
     NAVBAR STYLE
 -------------------------------------------------------*/
 
-.nav-name {
-    padding-right: 100px;
+.nav-brand {
+    padding-left: 200px;
+}
+
+/*----Search----*/
+.search-icon, .user-icon {
+    background: none;
+    border: none;
+}
+.search-icon:focus, .user-icon:focus {
+    outline: none;
+}
+
+.search-icon {
+    margin-right: 30px;
+}
+
+.search-bar {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d8d5d5;
+    border-radius: 5%;
+    width: 250px;
+    font-size: 15px;
 }
 
 /*----Dropdown----*/
 .dropdown-btn {
     font-size: 300px;
 }
-.dropdown-btn:focus {
-    outline: none;
-}
-
-.dropdown-toggle:focus {
-    outline: none;
-}
-
 
 /*-----------------------------------------------------
     HOME/MAIN STYLE
@@ -144,7 +151,6 @@ ion-icon {
     /*flexbox with a column direction (elements in this will be displayed in columns in their own boxes)*/
     display: flex;
     flex-direction: column;
-    /*color of the border*/
     border: 1px solid #efefef;
     box-shadow: 2px 3px 3px rgba(0,0,0,0.15);
     padding: 30px;

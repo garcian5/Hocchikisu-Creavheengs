@@ -4,7 +4,7 @@ import { Dropdown } from 'react-bootstrap';
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
             <div className="center">
                 <Dropdown size="sm">
                     <Dropdown.Toggle variant>Explore</Dropdown.Toggle>
@@ -15,18 +15,22 @@ function NavBar() {
                 </Dropdown>
             </div>            
 
-            <form>
-                <NavLink className="navbar-brand nav-name" exact to="/">HocchiCreav</NavLink>
-                <input type="text" />
+            <NavLink className="navbar-brand nav-brand" exact to="/">HocchiCreav</NavLink>
 
-                <button className="search-icon">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
+            <div>
+                <form>
+                
+                    <input className="search-bar" placeholder="Search.." type="text" />
 
-                <button className="user-icon">
-                    <ion-icon name="person-outline"></ion-icon>
-                </button>
-            </form>
+                    <button className="search-icon">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <button className="user-icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </button>
+                </form>
+            </div>
         </nav>
     )
 }

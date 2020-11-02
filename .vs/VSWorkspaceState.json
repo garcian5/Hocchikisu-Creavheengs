@@ -4,7 +4,8 @@
     "\\frontend",
     "\\frontend\\src",
     "\\frontend\\src\\components",
-    "\\frontend\\src\\components\\presentational"
+    "\\frontend\\src\\components\\presentational",
+    "\\frontend\\src\\components\\presentational\\artcategory"
   ],
   "SelectedNode": "\\frontend\\src\\components\\presentational\\NavBar.js",
   "PreviewInSolutionExplorer": false
