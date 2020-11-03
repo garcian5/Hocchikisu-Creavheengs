@@ -3,8 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // css
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 
 // components
 import Footer from './components/presentational/Footer';

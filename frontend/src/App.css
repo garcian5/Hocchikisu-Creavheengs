@@ -229,30 +229,10 @@ input {
     border: none;
 }
 .modal-content {
-    border: #e6e6e6;
+    border: 1px solid #e6e6e6;
     border-radius: 0;
 }
 
-.modal-header {
+.modal-header {   
     border-bottom: none;
 }
-
-.close {
-    color: red;
-    font-weight: 100;
-    font-size: 35px;
-    transition: all 0.3s ease-in-out;
-}
-
-    .close:focus {
-        outline: none;
-    }
-
-    .close:hover {
-        color: rgba(255, 189, 191, 1);
-        transform: scale(1.15, 1.15);
-    }
-
-    .close::after {
-        transition: all 0.3s ease-in-out;
-    }
