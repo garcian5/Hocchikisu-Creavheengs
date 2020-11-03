@@ -1,6 +1,6 @@
 import React from "react";
 
-function LoginCreate() {
+function CreateAccount() {
 	return (
 		<div className="login-create">
 			<div className="container logcrea-box">
@@ -15,4 +15,4 @@ function LoginCreate() {
 	)
 }
 
-export default LoginCreate;
+export default CreateAccount;

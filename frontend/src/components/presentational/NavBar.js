@@ -26,7 +26,7 @@ function NavBar() {
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
 
-                    <Link to="/login-or-create">
+                    <Link to="/create-account">
                         <button className="user-icon" title="User Login">
                             <ion-icon name="person-outline"></ion-icon>
                         </button>

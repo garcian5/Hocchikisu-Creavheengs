@@ -17,7 +17,7 @@ import LiteraryArt from './components/presentational/artcategory/LiteraryArt';
 import VisualArt from './components/presentational/artcategory/VisualArt';
 import OtherArt from './components/presentational/artcategory/OtherArt';
 
-import LoginCreate from './components/presentational/user/LoginCreate';
+import CreateAccount from './components/presentational/user/CreateAccount';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
                     <Route path="/plastic-art" component={PlasticArt} />
                     <Route path="/other-art" component={OtherArt} />
 
-                    <Route path="/login-or-create" component={LoginCreate} />
+                    <Route path="/create-account" component={CreateAccount} />
                 </Switch>
             </Router>
 
