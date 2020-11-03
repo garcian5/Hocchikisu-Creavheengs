@@ -18,6 +18,7 @@ import VisualArt from './components/presentational/artcategory/VisualArt';
 import OtherArt from './components/presentational/artcategory/OtherArt';
 
 import CreateAccount from './components/presentational/user/CreateAccount';
+import Login from './components/presentational/user/Login';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
                     <Route path="/other-art" component={OtherArt} />
 
                     <Route path="/create-account" component={CreateAccount} />
+                    <Route path="/login" component={Login} />
                 </Switch>
             </Router>
 

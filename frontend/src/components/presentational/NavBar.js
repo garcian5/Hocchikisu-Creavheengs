@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Dropdown } from 'react-bootstrap';
+import Login from "./user/Login";
 
 function NavBar() {
+    // for login modal view
+    const [modalShow, setModalShow] = useState(false);
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
             <div className="center">
@@ -18,20 +22,28 @@ function NavBar() {
             <NavLink className="navbar-brand nav-brand" exact to="/">HocchiCreav</NavLink>
 
             <div>
-                <form>
-                
+                <form className="side-by-side">
                     <input className="search-bar" placeholder="Search.." type="text" />
 
                     <button className="search-icon">
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
-
-                    <Link to="/create-account">
-                        <button className="user-icon" title="User Login">
-                            <ion-icon name="person-outline"></ion-icon>
-                        </button>
-                    </Link>
                 </form>
+
+                <div className="side-by-side">
+                    <button
+                        className="user-icon"
+                        title="User Login"
+                        onClick={() => setModalShow(true)}
+                    >
+                        <ion-icon name="person-outline"></ion-icon>
+                    </button>
+
+                    <Login
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                    />
+                </div>
             </div>
         </nav>
     )

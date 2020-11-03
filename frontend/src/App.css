@@ -50,6 +50,10 @@ button, input[type="button"], input[type="submit"] {
     outline: none;
 }
 
+.side-by-side {
+    display: inline-block;
+}
+
 /*-----------------------------------------------------
     FOOTER STYLE
 -------------------------------------------------------*/
@@ -117,6 +121,7 @@ ion-icon {
 
 /*----Search----*/
 .search-icon {
+    display: inline-block;
     margin-right: 30px;
 }
 
