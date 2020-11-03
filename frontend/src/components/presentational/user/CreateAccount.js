@@ -8,20 +8,20 @@ function CreateAccount() {
 				<h6 className="center" style={{ marginBottom: 35 }}>Sign Up!</h6>
 
 				<form className="center">
-					<div className="signup-box">
+					<div className="bottom-space">
 						<input className="names" type="text" placeholder="First Name" />
 						<input className="names" type="text" placeholder="Last Name" />
 					</div>
 
-					<div className="signup-box">
+					<div className="bottom-space">
 						<input type="email" placeholder="Email" />
 					</div>
 
-					<div className="signup-box">
+					<div className="bottom-space">
 						<input type="password" placeholder="Password" />
 					</div>
 
-					<div className="signup-box">
+					<div className="bottom-space">
 						<input type="date" placeholder="Birthday" />
 					</div>
 

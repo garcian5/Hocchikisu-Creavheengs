@@ -186,7 +186,7 @@ ion-icon {
     padding-bottom: 20px;
 }
 
-.signup-box {
+.bottom-space {
     margin-bottom: 25px;    
 }
 
@@ -201,12 +201,16 @@ input {
     width: 50%;
 }
 
-.create-acct-btn {
+.create-acct-btn, .login-btn {
     margin: 0 auto;
     margin-top: 50px;
     padding: 10px;
     width: 50%;
     border: 1px solid;
+}
+
+.login-space {
+    margin: 10px;
 }
 
 .create-acct-btn:hover {
@@ -216,3 +220,39 @@ input {
 .or { padding: 15px 0px 5px; }
 .light-blue { background-color: #BEE0FD; }
 .light-grey { background-color: #C6C6C6; }
+
+/*-----------------------------------------------------
+    MODAL STYLE
+-------------------------------------------------------*/
+.login-modal {
+    font-family: Quicksand, sans-serif;
+    border: none;
+}
+.modal-content {
+    border: #e6e6e6;
+    border-radius: 0;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.close {
+    color: red;
+    font-weight: 100;
+    font-size: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+    .close:focus {
+        outline: none;
+    }
+
+    .close:hover {
+        color: rgba(255, 189, 191, 1);
+        transform: scale(1.15, 1.15);
+    }
+
+    .close::after {
+        transition: all 0.3s ease-in-out;
+    }

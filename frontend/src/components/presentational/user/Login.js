@@ -9,6 +9,7 @@ function Login(props) {
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
+            dialogClassName="login-modal"
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
@@ -17,25 +18,27 @@ function Login(props) {
             </Modal.Header>
 
             <Modal.Body>
-                <h4>Welcome Back HocchiCreathive!</h4>
+                <h4 className="bottom-space">Welcome Back HocchiCreathive!</h4>
 
-                <form>
-                    <div>
-                        <input type="text" />
+                <form className="center">
+                    <div className="bottom-space">
+                        <input type="text" placeholder="Username" />
                     </div>
 
-                    <div>
-                        <input type="password" />
+                    <div className="bottom-space">
+                        <input type="password" placeholder="Password" />
                     </div>
 
-                    <button>LOGIN</button>
+                    <button className="login-space create-acct-btn light-grey">LOGIN</button>
                 </form>
 
-                <p>--OR--</p>
+                <p className="or">--OR--</p>
 
-                <Link to="/create-account">
-                    <button onClick={props.onHide}>BE A HOCCHICREATIVE!</button>
-                </Link>
+                <div className="center">
+                    <Link to="/create-account">
+                        <button className="login-space create-acct-btn light-blue" onClick={props.onHide}>BE A HOCCHICREATHIVE!</button>
+                    </Link>
+                </div>
 
             </Modal.Body>
             <Modal.Footer>
