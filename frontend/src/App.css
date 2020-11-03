@@ -161,9 +161,9 @@ ion-icon {
 /*-----------------------------------------------------
     LOGIN CREATE STYLE
 -------------------------------------------------------*/
-.login-create {
+.create-acct {
     background-color: #a49f9d;
-    min-height: 100vh; /* will cover the 100% of viewport */
+    min-height: 100vh;
     overflow: hidden;
     display: block;
     position: relative;
@@ -172,9 +172,9 @@ ion-icon {
 /*Create a box model for this div and center it*/
 /*https://stackoverflow.com/questions/2498003/center-a-div-box-in-the-middle-of-the-page-using-css*/
 /*https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/*/
-.logcrea-box {
+.create-acct-box {
     background-color: whitesmoke;
-    padding: 100px 0px 100px;
+    padding: 20px 0px 100px;
     box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.15);
     position: absolute;
     top: 50%;
@@ -182,22 +182,35 @@ ion-icon {
     transform: translate(-50%, -50%);
 }
 
-.logcrea-greeting {
-    padding-bottom: 80px;
+.create-acct-greeting {
+    padding-bottom: 20px;
 }
 
-.logcrea-btn {
+.signup-box {
+    margin-bottom: 25px;    
+}
+
+.names {
+    width: 25%;
+}
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.create-acct-btn {
     margin: 0 auto;
+    margin-top: 50px;
     padding: 10px;
     width: 50%;
     border: 1px solid;
-    transition: transform .1s;
 }
 
-.logcrea-btn:hover {
-    transform: scale(1.05);
-    -ms-transform: scale(1.05); /* IE 9 */
-    -webkit-transform: scale(1.05); /* Safari 3-8 */
+.create-acct-btn:hover {
+    background-color: #d7ecfe;
 }
 
 .or { padding: 15px 0px 5px; }
