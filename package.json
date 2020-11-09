@@ -1,0 +1,19 @@
+{
+  "name": "hocchikisu-creavheengs",
+  "version": "1.0.0",
+  "description": "Hocchikisu Creavheengs is an interactive website that will allow users to publish their art of all medias.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garcian5/Hocchikisu-Creavheengs.git"
+  },
+  "author": "Nheljee Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garcian5/Hocchikisu-Creavheengs/issues"
+  },
+  "homepage": "https://github.com/garcian5/Hocchikisu-Creavheengs#readme"
+}
