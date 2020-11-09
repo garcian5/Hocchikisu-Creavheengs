@@ -2,12 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\frontend",
-    "\\frontend\\public\\favicon",
     "\\frontend\\src",
     "\\frontend\\src\\components",
     "\\frontend\\src\\components\\presentational",
     "\\frontend\\src\\components\\presentational\\user"
   ],
-  "SelectedNode": "\\frontend\\src\\components\\presentational\\user\\CreateAccount.js",
+  "SelectedNode": "\\frontend",
   "PreviewInSolutionExplorer": false
 }
