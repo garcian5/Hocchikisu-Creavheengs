@@ -138,7 +138,6 @@ ion-icon {
     HOME/MAIN STYLE
 -------------------------------------------------------*/
 .dashboard {
-    margin: 25px;
     text-align: center;
 }
 
@@ -229,7 +228,7 @@ input {
     border: none;
 }
 .modal-content {
-    border: 1px solid #e6e6e6;
+    border: none;
     border-radius: 0;
 }
 
