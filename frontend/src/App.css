@@ -182,15 +182,21 @@ ion-icon {
 }
 
 .create-acct-greeting {
-    padding-bottom: 20px;
+    padding-top: 60px;
 }
 
 .bottom-space {
     margin-bottom: 25px;    
 }
 
+/*erase space between first name and last name input*/
 .names {
     width: 25%;
+    margin-right: 0;
+}
+/*center last name and first name inputs*/
+.lastname {
+    margin-right: 20px;
 }
 input {
     background: none;

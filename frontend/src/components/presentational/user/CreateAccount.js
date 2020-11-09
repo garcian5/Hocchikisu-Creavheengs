@@ -10,7 +10,11 @@ function CreateAccount() {
 				<form className="center">
 					<div className="bottom-space">
 						<input className="names" type="text" placeholder="First Name" />
-						<input className="names" type="text" placeholder="Last Name" />
+						<input className="lastname names" type="text" placeholder="Last Name" />
+					</div>
+
+					<div className="bottom-space">
+						<input type="text" placeholder="Username" />
 					</div>
 
 					<div className="bottom-space">
