@@ -13,7 +13,9 @@ import reportWebVitals from './reportWebVitals';
 ); */
 
 // for latest react versions (18+)
-ReactDOM.createRoot(document.getElementById("root")).render(
+// ! operator is a non null assertion when you're sure this will never be null
+// re: https://stackoverflow.com/a/63520829
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
